@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta name="description" content="" />
 
-    <meta property="og:title" content="" />
+    <meta
+      property="og:title"
+      content="TVDB Group - Trame Digitali e Venice Bay"
+    />
     <meta property="og:type" content="" />
     <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="/img/TDVB_logo.png" />
     <meta property="og:image:alt" content="" />
 
     <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -19,16 +22,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .open-sans {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+    </style>
   </head>
 
-  <body>
-    <main>
-      <section
-        class="container mx-auto px-12 flex flex-col items-center gap-12 pt-24 h-[80vh]"
-      >
-        <img src="/img/TDVB_logo.png" class="w-80 main-logo" alt="" />
+  <body class="open-sans">
+    <main
+      class="grid h-screen relative"
+      style="grid-template: 1fr auto / 1fr auto"
+    >
+      <img src="/img/bg-4-50.png" class="absolute w-full h-full z-10
+      object-cover alt="" />
 
-        <h2 class="text-center max-w-3xl py-4">
+      <section
+        class="container mx-auto px-12 flex flex-col items-center justify-center gap-12 py-60 z-20"
+        style="grid-column: 1 / 4"
+      >
+        <img
+          src="/img/TDVB_logo.png"
+          class="h-64 w-auto main-logo object-contain"
+          alt=""
+        />
+
+        <h2 class="text-center max-w-3xl text-xl xl:py-20">
           Affidarsi a TDVB Group è una scelta innanzitutto culturale, fuori dai
           soliti cliché dell'agenzia di marketing. È la scelta di affidarsi a un
           gruppo serio, trasparente, concreto e con competenze approfondite in
@@ -36,18 +66,73 @@
           sempre più veloce e complesso.
         </h2>
         <div
-          class="flex flex-col xl:flex-row gap-12 items-center justify-center"
+          class="flex flex-col xl:flex-row gap-20 items-center justify-center"
         >
-          <img
-            src="/img/TrameDigitali_logo.png"
-            class="object-contain h-12"
-            alt=""
-          />
-          <img
-            src="/img/VB_10_Anni_logo.png"
-            class="h-16 object-contain"
-            alt=""
-          />
+          <div class="flex flex-col items-center my-4">
+            <a href="https://www.trame-digitali.it">
+              <img
+                src="/img/TrameDigitali_logo.png"
+                class="object-contain h-12"
+                alt="logo trame digitali"
+              />
+            </a>
+
+            <div class="flex flex-row gap-2 mt-8">
+              <a href="https://www.facebook.com/tramedigitali"
+                ><img
+                  src="/img/facebook.png"
+                  class="h-6"
+                  alt="facebook trame digitali"
+              /></a>
+              <a href="https://www.instagram.com/tramedigitali/"
+                ><img
+                  src="/img/instagram.png"
+                  class="h-6"
+                  alt="instagram trame digitali"
+              /></a>
+              <a href="https://it.linkedin.com/company/trame-digitali"
+                ><img
+                  src="/img/linkedin.png"
+                  class="h-6"
+                  alt="linkedin trame digitali"
+              /></a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="https://venicebay.it">
+              <img
+                src="/img/VB_10_Anni_logo.png"
+                class="h-16 xl:h-12 object-contain"
+                alt="logo venice bay"
+              />
+            </a>
+            <div class="flex flex-row gap-2 mt-8">
+              <a href=" https://www.facebook.com/venicebay/"
+                ><img
+                  src="/img/facebook.png"
+                  class="h-6"
+                  alt="facebook venice bay"
+              /></a>
+              <a href="https://www.instagram.com/venicebay/"
+                ><img
+                  src="/img/instagram.png"
+                  class="h-6"
+                  alt="instagram venice bay"
+              /></a>
+              <a href="https://x.com/VeniceBay"
+                ><img
+                  src="/img/linkedin.png"
+                  class="h-6"
+                  alt="linkedin venice bay"
+              /></a>
+              <a href="https://www.linkedin.com/company/5353636/venicebay"
+                ><img
+                  src="/img/twitter.png"
+                  class="h-6"
+                  alt="twitter venice bay"
+              /></a>
+            </div>
+          </div>
         </div>
         <div class="social-wrapper">
           <a
@@ -76,53 +161,56 @@
           </a>
         </div>
       </section>
-    </main>
-    <footer class="footer bg-black py-12 px-16">
-      <div
-        class="info-footer-container flex flex-col justify-center items-center text-center gap-12"
+      <footer
+        class="footer bg-black pb-12 pt-24 px-16 z-20"
+        style="grid-column: 1 / 4"
       >
-        <div class="logo-footer">
-          <img
-            class="h-24"
-            src="data:image/png;base64,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"
-          />
+        <div
+          class="info-footer-container flex flex-col lg:flex-row justify-center items-start lg:items-start gap-12 xl:gap-24"
+        >
+          <div class="logo-footer">
+            <img class="h-32" src="/img/logo_tdvb_bw.png" />
+          </div>
+          <div class="address-footer text-white">
+            <ul class="info-list-venice text-left">
+              <li class="text-3xl city-name py-2">Venezia</li>
+              <li class="phone-number text-gray-300">+39 041 099 2800</li>
+              <li class="address text-gray-300">Via Torino 186, Mestre</li>
+              <li class="email text-gray-300">
+                <a href="mailto:info@venicebay.it">info@venicebay.it</a>
+              </li>
+            </ul>
+          </div>
+          <div class="address-footer text-white">
+            <ul class="info-list-prato text-left">
+              <li class="text-3xl city-name py-2">Prato</li>
+              <li class="phone-number text-gray-300">+39 0574 020861</li>
+              <li class="address text-gray-300">Via Frà Bartolomeo 82/A</li>
+              <li class="email text-gray-300">
+                <a href="mailto:info@trame-digitali.it"
+                  >info@trame-digitali.it</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="services-footer text-white text-left">
+            <ul>
+              <li class="services text-3xl py-2">Services</li>
+              <li class="skill text-gray-300">Marketing and Strategy</li>
+              <li class="skill text-gray-300">Web Development</li>
+              <li class="skill text-gray-300">Graphic Design</li>
+              <li class="skill text-gray-300">Social Media Management</li>
+              <li class="skill text-gray-300">SEO</li>
+            </ul>
+          </div>
         </div>
-        <div class="address-footer text-white">
-          <ul class="info-list-venice">
-            <li class="text-3xl city-name">Venezia</li>
-            <li class="phone-number">+39 041 099 2800</li>
-            <li class="address">Via Torino 186, Mestre</li>
-            <li class="email">
-              <a href="mailto:info@venicebay.it">info@venicebay.it</a>
-            </li>
-          </ul>
+        <div class="copyright-privacy-container text-white text-center mt-12">
+          <p class="copyright">Copyright © 2024 TDVB Group</p>
+          <p class="privacy">Privacy policy</p>
         </div>
-        <div class="address-footer text-white">
-          <ul class="info-list-prato text-white">
-            <li class="text-3xl city-name">Prato</li>
-            <li class="phone-number">+39 0574 020861</li>
-            <li class="address">Via Frà Bartolomeo 82/A</li>
-            <li class="email">
-              <a href="mailto:info@trame-digitali.it">info@trame-digitali.it</a>
-            </li>
-          </ul>
-        </div>
-        <div class="services-footer text-white">
-          <ul>
-            <li class="services text-3xl">Services</li>
-            <li class="skill">Marketing and Strategy</li>
-            <li class="skill">Web Development</li>
-            <li class="skill">Graphic Design</li>
-            <li class="skill">Social Media Management</li>
-            <li class="skill">SEO</li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright-privacy-container text-white text-center mt-12">
-        <p class="copyright">Copyright © 2022 TDVB Group</p>
-        <p class="privacy">Privacy policy</p>
-      </div>
-    </footer>
+      </footer>
+    </main>
+
     <!-- Add your site or application content here -->
     <script src="js/app.js"></script>
   </body>
